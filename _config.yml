@@ -97,26 +97,17 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Korea"
-  email            : k99hoon@gmail.com
+  #email            : k99hoon@gmail.com
   links:
-    - label: "Email"
+    - label: "k99hoon@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.name@email.com"
-    - label: "Website"
+      url: "mailto:k99hoon@gmail.com"
+    - label: "dhtayokim.com"
       icon: "fas fa-fw fa-link"
       url: "https://dhtayokim.com"
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    #- label: "Facebook"
-    #  icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bsstayo"
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -129,7 +120,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/bsstayo"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
