@@ -21,3 +21,5 @@ categories: diary
 
 아 놀고싶다.
 근데 강의듣고 공부해야지.
+
+p.s. It's not 2016, 2015.
