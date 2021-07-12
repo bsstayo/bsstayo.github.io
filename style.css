@@ -1,21 +1,40 @@
-/*body {
-  background-image: url('/src/beach.jpg');
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.bg {
   min-height: 100%;
   background-position: center;
   background-size: cover;
-  font-family: "Raleway", sans-serif;
-}*/
-
-<style>
-#video {
-     position: absolute;
-     top: 0px;
-     left: 0px;
-     min-width: 100%;
-     min-height: 100%;
-     width: auto;
-     height: auto;
-     z-index: -1;
-     overflow: hidden;
 }
-</style>
+
+video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.text p {
+  text-align: center;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.temp {
+  margin-bottom: 50%;
+}
