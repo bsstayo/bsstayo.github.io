@@ -3,38 +3,32 @@ body {
   margin: 0px;
 }
 
-.bg {
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+.jb-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
 }
 
-video {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  min-width: 100%;
-  min-height: 100%;
+.jb-box video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
   width: auto;
   height: auto;
-  z-index: -1;
-  overflow: hidden;
-}
 
-.text {
+  /* Center the video */
   position: absolute;
-  width: 100%;
+  z-index: -1;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 
-.text p {
-  text-align: center;
-  font-size: 48px;
-  color: #ffffff;
-}
-
-.temp {
-  margin-bottom: 50%;
+.text { 
+    color: #ffffff; 
 }
