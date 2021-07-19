@@ -32,3 +32,22 @@ body {
 .text { 
     color: #ffffff; 
 }
+
+.bottom-fix {
+    position: fixed; 
+    padding: 12px 16px;
+    bottom: 0; 
+    width: 100%;
+}
+
+.icon-sidebar {
+    font-size: 24px;
+    border: none;
+    padding: 7px;
+    background-color: white;
+    cursor: pointer;        
+}
+
+.icon-sidebar:hover {
+  background-color: lightgray;
+}
