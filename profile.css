@@ -32,7 +32,21 @@ footer{
     position: fixed;
     left: 0px;
     bottom: 0px;
-    background: #5eaeff;
-    text-align: center;
+    background: #2F3336;
     color: white;
+}
+
+.footer_copyright {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: table;
+}
+
+.footer_p {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0;
+    font-size: min(2vw, 15px);
 }
