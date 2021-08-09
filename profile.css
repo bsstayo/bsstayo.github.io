@@ -4,14 +4,6 @@ body, html {
     height: 100%;
     font-family: "Raleway", sans-serif;
 }
-/*
-.container {
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}*/
 
 .main_content {
     padding-bottom: 60px;
