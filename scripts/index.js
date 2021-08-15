@@ -1,18 +1,18 @@
-function openRightMenu() {         
-    document.getElementById("rightMenu").style.display = "block";
-    //document.getAnimations("rightMenu").slideToggle();
-    //document.getElementById("rightMenu").slideToggle();
-}
-                
-function closeRightMenu() {
-    document.getElementById("rightMenu").style.display = "none";
-    //document.getAnimations("rightMenu").slideToggle();
-}
-
 function about() {
     closeRightMenu();
-    var box = document.getElementById("about");
-    box.style.display = "block";
-    box.style.backgroundColor = "rgba(0,0,0,0.85)";
-    box.style.zIndex = "1";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function openRightMenu() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+  //document.getElementById("mySidebar").classList.toggle('w3-animate-right');
+  //document.getElementById("mySidebar").classList.toggle('w3-animate-left');
+}
+
+function closeRightMenu() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+  //document.getElementById("mySidebar").classList.toggle('w3-animate-right');
+  //document.getElementById("mySidebar").classList.toggle('w3-animate-left');
 }
