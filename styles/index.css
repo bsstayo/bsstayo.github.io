@@ -61,3 +61,11 @@ h1, h2, h3, h4, h5, h6 {
 .icon-sidebar:hover {
   background-color: lightgray;
 }
+
+.aboutClose { 
+    display: none;
+    color: #ffffff; 
+    background-color: transparent;
+    border-width: 0;
+    border-color: transparent;
+}

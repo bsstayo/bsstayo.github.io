@@ -1,6 +1,8 @@
 function about() {
     document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "block";
+    //document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("aboutOverlay").style.display = "block";
+    document.getElementById("aboutClose").style.display = "block";
 }
 
 function openRightMenu() {
