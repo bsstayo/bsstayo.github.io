@@ -104,6 +104,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 51px;
     height: 51px;
     cursor: pointer;
+    background-image: url("../src/images/buttons_2x.png");
+    background-repeat: no-repeat;
+    background-size: 102px 748px;
 }
 
 #about-contents {
@@ -129,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #about-contents>h2 {
     width: 450px;
-    font-size: 13px;
+    font-size: min(2vw, 15px);;
     line-height: 18px;
     margin: 0 0 18px 2px;
     font-weight: 400;

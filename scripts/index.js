@@ -1,12 +1,12 @@
 function about() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
-  document.getElementById("aboutOverlay").style.display = "block";
+  document.getElementById("about").style.display = "block";
   //document.getElementById("aboutClose").style.display = "block";
 }
 
 function closeOverlay() {
-  document.getElementById("aboutOverlay").style.display = "none";
+  document.getElementById("about").style.display = "none";
   //document.getElementById("aboutClose").style.display = "none";
 }
 
