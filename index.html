@@ -57,46 +57,52 @@
                 <source src="src/videos/Keyboard.mp4" type="video/mp4">
                 <strong>Your browser does not support the video tag.</strong>
             </video>
-            
-            <div clsss="w3-display-container w3-animate-opacity w3-text-white">
-                <div class="w3-display-middle">
-                    <h1 class="text w3-center w3-jumbo w3-animate-top">COMING SOON!</h1>
-                    <hr class="w3-border-white" style="margin:auto;width:40%">
-                    <p class="text w3-large w3-center">Comming this SUMMER</p>
-                </div> 
-            </div>
-            
-            <div class="w3-sidebar w3-bar-block w3-card w3-animate-right"
-                 style="display:none;right:0;" id="rightMenu">
-                <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-                <a href="/profile" class="w3-bar-item w3-button">Profile</a>
-                <a href="#" class="w3-bar-item w3-button">Comming Soon</a>
-                <a href="#" class="w3-bar-item w3-button">Thanks!</a>
-                
-                <div class="bottom-fix">
-                    <a class="icon-sidebar" href="https://github.com/bsstayo"><i class="fa">&#xf09b;</i></a>
-                </div> 
-            </div>
-
-            <div>
-                <div class="text w3-display-topleft w3-padding-large w3-xlarge">
-                    BSSTayo
-                </div>
-                
-                <button class="w3-button w3-xlarge w3-right"
-                        onclick="openRightMenu()"
-                        style="color: white;">&#9776;</button>
-            </div>
-            
-            <script>
-                function openRightMenu() {
-                    document.getElementById("rightMenu").style.display = "block";
-                }
-                
-                function closeRightMenu() {
-                    document.getElementById("rightMenu").style.display = "none";
-                }
-            </script>
         </div>
+        
+        <!-- Sidebar -->
+        
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none; right:0; z-index:5" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large w3-animate-left" onclick="closeRightMenu()">Close &times;</button>
+            <a href="/profile" class="w3-bar-item w3-button w3-animate-left">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-animate-left">Comming Soon</a>
+            <a onclick="about()" class="w3-bar-item w3-button w3-animate-left">About</a>
+            
+            <div class="bottom-fix">
+                <a class="icon-sidebar" href="https://github.com/bsstayo"><i class="fa">&#xf09b;</i></a>
+            </div> 
+        </div>
+
+        <!-- Page Content -->
+        <!-- about -->
+        <div id="about" style="visibility: inherit; opacity: 1;">
+            <div id="about-right" class="right-pos white">
+                <div id="about-close-bt" class="buttons close-pos" onclick="closeOverlay()" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+            </div>
+                
+            <div id="about-contents">
+                <h1>About</h1>
+                <h2 style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><span class="about-bold">bsstayo.github.io</span> is a website for Do-Hoon Kim. This website shows that what I did, what I will do. Made during military service.</h2>
+            </div>
+        </div>
+        
+        <div class="w3-overlay" onclick="closeRightMenu()" style="cursor:pointer" id="myOverlay"></div>
+
+        <div>
+            <div class="text w3-display-topleft w3-padding-large w3-xlarge">
+                BSSTayo
+            </div>
+            
+            <button class="w3-button w3-xlarge w3-right" onclick="openRightMenu()" style="color: white;">&#9776;</button> <!--menu button-->
+        </div>
+        
+        <div class="w3-container w3-animate-opacity w3-text-white">
+            <div class="w3-display-middle">
+                <h1 class="text w3-center w3-jumbo w3-animate-top">COMING SOON!</h1>
+                <hr class="w3-border-white" style="margin:auto;width:40%">
+                <p class="text w3-large w3-center">Comming this SUMMER</p>
+            </div> 
+        </div>
+                        
+        <script src="scripts/index.js"></script>
     </body>
 </html>

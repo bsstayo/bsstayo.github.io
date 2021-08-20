@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%; 
     overflow: hidden;
+    z-index: -1;
 }
 
 .jb-box video {
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Center the video */
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -59,4 +60,80 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon-sidebar:hover {
   background-color: lightgray;
+}
+
+.aboutClose { 
+    color: #ffffff; 
+    background-color: transparent;
+    border-width: 0;
+    border-color: transparent;
+}
+
+#about {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 800;
+    opacity: 0;
+    display: none;
+    color: #fff;
+    background-color: rgba(0,0,0,0.85);
+}
+
+#about-right {
+    z-index: 100;
+}
+
+.right-pos {
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    width: 51px;
+    height: 51px;
+    margin-top: -25px;
+}
+
+.white .close-pos {
+    background-position: 0 0;
+}
+
+.buttons {
+    position: relative;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    background-image: url("../src/images/buttons_2x.png");
+    background-repeat: no-repeat;
+    background-size: 102px 748px;
+}
+
+#about-contents {
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    margin: -181px 0 0 -240px;
+    z-index: 1;
+}
+
+#about-contents>h1 {
+    font-size: 53px;
+    line-height: 50px;
+    letter-spacing: -2px;
+    margin: 0 0 16px 0;
+    font-family: 'Crimson Text',serif;
+    font-weight: 600;
+    color: #fff;
+    width: 800px!important;
+}
+
+#about-contents>h2 {
+    width: 450px;
+    font-size: min(2vw, 15px);;
+    line-height: 18px;
+    margin: 0 0 18px 2px;
+    font-weight: 400;
 }
