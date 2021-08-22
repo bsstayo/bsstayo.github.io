@@ -46,6 +46,7 @@
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <style> body,html{font-family: "Raleway", sans-serif;} </style>
@@ -62,7 +63,10 @@
         <!-- Sidebar -->
         
         <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none; right:0; z-index:5" id="mySidebar">
-            <button class="w3-bar-item w3-button w3-large w3-animate-left" onclick="closeRightMenu()">Close &times;</button>
+            <!--
+            <a class="close-menu"><button class="w3-bar-item w3-animate-left" style="text-align:right;"><i class="material-icons" style="vertical-align:middle;">close</i></button></a>-->
+            
+            <button class="w3-bar-item w3-button w3-xlarge w3-animate-left" onclick="closeRightMenu()" style="text-align:right;"><i class="material-icons" style="vertical-align:middle;">close</i></button>
             <a href="/profile" class="w3-bar-item w3-button w3-animate-left">Profile</a>
             <a href="#" class="w3-bar-item w3-button w3-animate-left">Comming Soon</a>
             <a onclick="about()" class="w3-bar-item w3-button w3-animate-left">About</a>
@@ -92,7 +96,7 @@
                 BSSTayo
             </div>
             
-            <button class="w3-button w3-xlarge w3-right" onclick="openRightMenu()" style="color: white;">&#9776;</button> <!--menu button-->
+            <button class="w3-button w3-xlarge w3-right" onclick="openRightMenu()" style="color: white;"><i class="material-icons" style="vertical-align: middle;">menu</i></button> <!--menu button-->
         </div>
         
         <div class="w3-container w3-animate-opacity w3-text-white">
