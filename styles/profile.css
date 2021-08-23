@@ -5,6 +5,12 @@ body, html {
     font-family: "Raleway", sans-serif;
 }
 
+.main_headline {
+    height: 70px;
+    overflow: hidden;
+    border-bottom: solid 3px skyblue;
+}
+
 .main_content {
     padding-bottom: 60px;
 }
@@ -40,5 +46,5 @@ footer{
     vertical-align: middle;
     display: table-cell;
     margin: 0;
-    font-size: min(2vw, 15px);
+    font-size: min(2vw, 12px);
 }
