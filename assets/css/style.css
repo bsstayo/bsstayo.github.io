@@ -807,10 +807,10 @@ main {
 .timeline-item:not(:last-child)::before {
   content: "";
   position: absolute;
-  top: -25px;
+  /* top: -25px; */
   left: -30px;
   width: 1px;
-  height: calc(100% + 50px);
+  height: calc(100% + 25px);
   background: var(--jet);
 }
 
