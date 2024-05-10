@@ -1138,8 +1138,13 @@ main {
   line-height: 1.6;
 }
 
-
-
+.blog-content-text {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-top: 15px;
+}
 
 
 /*-----------------------------------*\
