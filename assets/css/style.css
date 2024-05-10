@@ -53,6 +53,16 @@
     hsl(45, 100%, 72%), 
     hsl(35, 100%, 68%)
   );
+  --text-gradient-red: linear-gradient(
+    to right, 
+    hsl(0, 100%, 72%), 
+    hsl(20, 100%, 68%)
+  );
+  --text-gradient-blue: linear-gradient(
+    to right, 
+    hsl(207, 100%, 72%), 
+    hsl(222, 100%, 68%)
+  );
 
   /* solid */
 
@@ -156,9 +166,6 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
-
-
 
 
 /*-----------------------------------*\
@@ -546,13 +553,16 @@ main {
 
 .service-content-box { text-align: center; }
 
-.service-item-title { margin-bottom: 7px; }
+.service-item-title { 
+  margin-bottom: 25px; 
+}
 
 .service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  margin-top: 10px;
 }
 
 
@@ -804,10 +814,10 @@ main {
 .timeline-item:not(:last-child)::before {
   content: "";
   position: absolute;
-  top: -25px;
+  /* top: -25px; */
   left: -30px;
   width: 1px;
-  height: calc(100% + 50px);
+  height: calc(100% + 25px);
   background: var(--jet);
 }
 
@@ -827,6 +837,8 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 
@@ -867,8 +879,17 @@ main {
   border-radius: inherit;
 }
 
+.skill-progress-fill2 {
+  background: var(--text-gradient-red);
+  height: 100%;
+  border-radius: inherit;
+}
 
-
+.skill-progress-fill3 {
+  background: var(--text-gradient-blue);
+  height: 100%;
+  border-radius: inherit;
+}
 
 
 /*-----------------------------------*\
@@ -1114,8 +1135,13 @@ main {
   line-height: 1.6;
 }
 
-
-
+.blog-content-text {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-top: 15px;
+}
 
 
 /*-----------------------------------*\
@@ -1127,6 +1153,7 @@ main {
   height: 250px;
   width: 100%;
   border-radius: 16px;
+  margin-top: 30px;
   margin-bottom: 30px;
   border: 1px solid var(--jet);
   overflow: hidden;

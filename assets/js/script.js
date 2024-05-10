@@ -1,10 +1,7 @@
 'use strict';
 
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
 
 
 // sidebar variables
@@ -13,7 +10,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
 
 
 // testimonials variables
@@ -49,31 +45,30 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
 }
 
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
+// // add click event to modal close button
+// modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+// overlay.addEventListener("click", testimonialsModalFunc);
 
 
 // custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
+// const select = document.querySelector("[data-select]");
+// const selectItems = document.querySelectorAll("[data-select-item]");
+// const selectValue = document.querySelector("[data-selecct-value]");
+// const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+// select.addEventListener("click", function () { elementToggleFunc(this); });
 
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
+// // add event in all select items
+// for (let i = 0; i < selectItems.length; i++) {
+//   selectItems[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
+//     let selectedValue = this.innerText.toLowerCase();
+//     selectValue.innerText = this.innerText;
+//     elementToggleFunc(select);
+//     filterFunc(selectedValue);
 
-  });
-}
+//   });
+// }
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
@@ -94,26 +89,24 @@ const filterFunc = function (selectedValue) {
 
 }
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+// // add event in all filter button items for large screen
+// let lastClickedBtn = filterBtn[0];
 
-for (let i = 0; i < filterBtn.length; i++) {
+// for (let i = 0; i < filterBtn.length; i++) {
 
-  filterBtn[i].addEventListener("click", function () {
+//   filterBtn[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
+//     let selectedValue = this.innerText.toLowerCase();
+//     selectValue.innerText = this.innerText;
+//     filterFunc(selectedValue);
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
+//     lastClickedBtn.classList.remove("active");
+//     this.classList.add("active");
+//     lastClickedBtn = this;
 
-  });
+//   });
 
-}
-
-
+// }
 
 // contact form variables
 const form = document.querySelector("[data-form]");
@@ -133,8 +126,6 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
-
-
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
